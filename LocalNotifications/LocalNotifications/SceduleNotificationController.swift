@@ -86,6 +86,6 @@ extension UIViewController: UNUserNotificationCenterDelegate {
         AudioServicesCreateSystemSoundID(Bundle.main.url(forResource: "fe_07", withExtension: "mp3")! as CFURL, &saudioID)
         AudioServicesPlaySystemSound(saudioID)
         // note that it does not play sound if `.sound` is the only option
-        // completionHandler( [.banner, .sound])
+        completionHandler([])
     }
 }
