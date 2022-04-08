@@ -60,7 +60,6 @@ class SceduleNotificationController: UIViewController {
         }
     }
     
-
 }
 
 extension SceduleNotificationController: UIPickerViewDataSource {
