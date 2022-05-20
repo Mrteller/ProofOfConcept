@@ -12,6 +12,7 @@ struct CustomColorPicker: UIViewRepresentable {
     
     private let cw = UIColorWell()
     private let label = UIButton(type: .custom)
+    private let picker = UIColorPickerViewController()
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -61,9 +62,11 @@ struct CustomColorPicker: UIViewRepresentable {
         
         @objc func labelPressed(sender: UIButton) {
             // This does not present color picker controller
-            customColorPicker.cw.sendActions(for: .touchDown)
-            customColorPicker.cw.sendActions(for: .allEvents)
+            //customColorPicker.cw.sendActions(for: .touchDown)
+            // customColorPicker.cw.sendActions(for: .allEvents)
             // customColorPicker.cw.sendAction(Selector("invokeColorPickerWithSender:"), to: customColorPicker.cw, for: nil)
+            customColorPicker.picker.selectedColor = sender.configuration?.background.backgroundColor ?? .secondarySystemBackground
+            customColorPicker.picker.supportsAlpha = false
         }
     }
     

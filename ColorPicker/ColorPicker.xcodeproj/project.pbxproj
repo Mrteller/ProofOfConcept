@@ -12,6 +12,7 @@
 		DABF60F628369636001A5166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF60F528369636001A5166 /* Assets.xcassets */; };
 		DABF60F928369636001A5166 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF60F828369636001A5166 /* Preview Assets.xcassets */; };
 		DABF61052836ACCA001A5166 /* CustomColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF61042836ACCA001A5166 /* CustomColorPicker.swift */; };
+		DABF61072837C0EB001A5166 /* ColorPickerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DABF60F528369636001A5166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DABF60F828369636001A5166 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DABF61042836ACCA001A5166 /* CustomColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPicker.swift; sourceTree = "<group>"; };
+		DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				DABF60F128369634001A5166 /* ColorPickerApp.swift */,
 				DABF60F328369634001A5166 /* ContentView.swift */,
 				DABF61042836ACCA001A5166 /* CustomColorPicker.swift */,
+				DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */,
 				DABF60F528369636001A5166 /* Assets.xcassets */,
 				DABF60F728369636001A5166 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				DABF60F428369634001A5166 /* ContentView.swift in Sources */,
 				DABF60F228369634001A5166 /* ColorPickerApp.swift in Sources */,
+				DABF61072837C0EB001A5166 /* ColorPickerPanel.swift in Sources */,
 				DABF61052836ACCA001A5166 /* CustomColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
