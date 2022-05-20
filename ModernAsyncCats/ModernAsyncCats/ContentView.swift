@@ -13,6 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+//            Image(systemName: "xmark.circle.fill")
+//                  .foregroundStyle(.teal, .gray)
+//                  .font(.system(size: 42.0))
             if let image = image {
                 Image(uiImage: image)
                     .resizable()
