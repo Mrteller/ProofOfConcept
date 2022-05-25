@@ -11,6 +11,7 @@
 		DA229DA2283DF88400ADB44E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA229DA1283DF88400ADB44E /* Assets.xcassets */; };
 		DA229DA5283DF88400ADB44E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA229DA4283DF88400ADB44E /* Preview Assets.xcassets */; };
 		DA229DAC283E06A800ADB44E /* DemoMessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229DAB283E06A800ADB44E /* DemoMessageBubble.swift */; };
+		DA229DAE283E262100ADB44E /* SemiRoundedRectange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229DAD283E262100ADB44E /* SemiRoundedRectange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA229DA1283DF88400ADB44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA229DA4283DF88400ADB44E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA229DAB283E06A800ADB44E /* DemoMessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMessageBubble.swift; sourceTree = "<group>"; };
+		DA229DAD283E262100ADB44E /* SemiRoundedRectange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiRoundedRectange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DA229D9D283DF88200ADB44E /* MessageBubblesApp.swift */,
 				DA229DAB283E06A800ADB44E /* DemoMessageBubble.swift */,
+				DA229DAD283E262100ADB44E /* SemiRoundedRectange.swift */,
 				DA229DA1283DF88400ADB44E /* Assets.xcassets */,
 				DA229DA3283DF88400ADB44E /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				DA229D9E283DF88200ADB44E /* MessageBubblesApp.swift in Sources */,
 				DA229DAC283E06A800ADB44E /* DemoMessageBubble.swift in Sources */,
+				DA229DAE283E262100ADB44E /* SemiRoundedRectange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

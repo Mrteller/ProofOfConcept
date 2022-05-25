@@ -17,6 +17,7 @@ struct MessageBubble<Content>: View where Content: View {
                 Spacer()
             }
             content().clipShape(MessageBubbleShape(isRight: isRight)
+                                //content().padding().background(.green, in: MessageBubbleShape(isRight: isRight)
             )
             if !isRight {
                 Spacer()
@@ -80,10 +81,10 @@ struct MessageTextBody: View {
     
     let message: String
     var body: some View {
-    Text(message)
-        .padding(.all)
-        .foregroundColor(.primary)
-        .background(.quaternary)
+        Text(message)
+            .padding(.all)
+            .foregroundColor(.primary)
+            .background(.quaternary)
     }
 }
 
@@ -111,3 +112,17 @@ struct MessageBubbles_Previews: PreviewProvider {
         DemoMessageBubble()
     }
 }
+
+extension Shape {
+    func flipped(_ axis: Axis = .horizontal, anchor: UnitPoint = .center) -> ScaledShape<Self> {
+        switch axis {
+        case .horizontal:
+            return scale(x: -1, y: 1, anchor: anchor)
+        case .vertical:
+            return scale(x: 1, y: -1, anchor: anchor)
+        }
+        
+    }
+}
+
+
