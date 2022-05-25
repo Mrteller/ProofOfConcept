@@ -1,4 +1,33 @@
 import Foundation
+
+
+
+
+func bubble(arr: inout [Int]) {
+    for i in (1..<arr.count).reversed() {
+        for j in 0..<i where arr[j] > arr[j + 1] {
+            arr.swapAt(j, j + 1)
+        }
+    }
+}
+
+extension Array where Element: Comparable {
+    mutating func bubble(by areInIncrreasingOrder: (Element, Element) -> Bool) {
+        for i in (0 ..< count) {
+            for j in (0 ..< count - i - 1) where !areInIncrreasingOrder(self[j], self[j + 1]) {
+                swapAt(j, j + 1)
+            }
+        }
+    }
+}
+
+var arr = (0...8).map{ _ in Int.random(in: 0...100)}
+arr
+arr.bubble(by: <)
+arr.sorted(by: <)
+
+// [1, 4, 13, 13, 19, 28, 30, 65, 68, 96]
+
 let calendar = Calendar.current
 let currentDate = Date()
 let birthday = calendar.date(from: DateComponents(calendar: calendar, year: 1982, month: 5, day: 28))!

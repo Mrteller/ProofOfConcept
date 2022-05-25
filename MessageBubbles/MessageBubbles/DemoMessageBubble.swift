@@ -17,7 +17,7 @@ struct MessageBubble<Content>: View where Content: View {
                 Spacer()
             }
             content().clipShape(MessageBubbleShape(isRight: isRight))
-            //content().padding().background(.green, in: MessageBubbleShape(isRight: isRight)
+            //content().padding().background(.green, in: MessageBubbleShape(isRight: isRight))
             if !isRight {
                 Spacer()
             }
