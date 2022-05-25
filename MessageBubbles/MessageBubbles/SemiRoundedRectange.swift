@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-import SwiftUI
+// see also: https://stackoverflow.com/questions/68883032/swiftui-how-to-combine-two-shapes-to-create-a-speech-bubble-with-strokes
 
 struct SemiRoundedRectangle: Shape {
     var cornerRadius: CGFloat
