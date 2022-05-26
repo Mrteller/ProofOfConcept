@@ -1,8 +1,5 @@
 import Foundation
 
-
-
-
 func bubble(arr: inout [Int]) {
     for i in (1..<arr.count).reversed() {
         for j in 0..<i where arr[j] > arr[j + 1] {

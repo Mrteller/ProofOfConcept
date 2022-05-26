@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var color: Color = .blue
+    @State var color: Color = .accentColor
     @State var isColorPickerPresented = false
+    let gradient = Gradient(stops: [.init(color: .red, location: 0), .init(color: .red, location: 0.49), .init(color: .green, location: 0.5), .init(color: .green, location: 1)])
     var body: some View {
         VStack {
             Button {
@@ -22,6 +23,7 @@ struct ContentView: View {
                 }
             }
         }
+        .background(LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .topTrailing))
         .sheet(isPresented: $isColorPickerPresented) {
             ZStack (alignment: .topTrailing) {
                 ColorPickerPanel(color: $color)
