@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA229DE42843CF5000ADB44E /* PaddedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229DE32843CF5000ADB44E /* PaddedList.swift */; };
-		DABF60F228369634001A5166 /* ColorPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF60F128369634001A5166 /* ColorPickerApp.swift */; };
-		DABF60F428369634001A5166 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF60F328369634001A5166 /* ContentView.swift */; };
-		DABF60F628369636001A5166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF60F528369636001A5166 /* Assets.xcassets */; };
-		DABF60F928369636001A5166 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF60F828369636001A5166 /* Preview Assets.xcassets */; };
-		DABF61072837C0EB001A5166 /* ColorPickerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */; };
+		DAF266DF2871C5B80016E3C1 /* CustomDisclosureGroupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF266DE2871C5B80016E3C1 /* CustomDisclosureGroupApp.swift */; };
+		DAF266E12871C5B80016E3C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF266E02871C5B80016E3C1 /* ContentView.swift */; };
+		DAF266E32871C5BA0016E3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF266E22871C5BA0016E3C1 /* Assets.xcassets */; };
+		DAF266E62871C5BA0016E3C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF266E52871C5BA0016E3C1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA229DE32843CF5000ADB44E /* PaddedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedList.swift; sourceTree = "<group>"; };
-		DABF60EE28369634001A5166 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DABF60F128369634001A5166 /* ColorPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerApp.swift; sourceTree = "<group>"; };
-		DABF60F328369634001A5166 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DABF60F528369636001A5166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DABF60F828369636001A5166 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerPanel.swift; sourceTree = "<group>"; };
+		DAF266DB2871C5B80016E3C1 /* CustomDisclosureGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDisclosureGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF266DE2871C5B80016E3C1 /* CustomDisclosureGroupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDisclosureGroupApp.swift; sourceTree = "<group>"; };
+		DAF266E02871C5B80016E3C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DAF266E22871C5BA0016E3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF266E52871C5BA0016E3C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DABF60EB28369634001A5166 /* Frameworks */ = {
+		DAF266D82871C5B80016E3C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DABF60E528369634001A5166 = {
+		DAF266D22871C5B80016E3C1 = {
 			isa = PBXGroup;
 			children = (
-				DABF60F028369634001A5166 /* ColorPicker */,
-				DABF60EF28369634001A5166 /* Products */,
+				DAF266DD2871C5B80016E3C1 /* CustomDisclosureGroup */,
+				DAF266DC2871C5B80016E3C1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DABF60EF28369634001A5166 /* Products */ = {
+		DAF266DC2871C5B80016E3C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DABF60EE28369634001A5166 /* ColorPicker.app */,
+				DAF266DB2871C5B80016E3C1 /* CustomDisclosureGroup.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DABF60F028369634001A5166 /* ColorPicker */ = {
+		DAF266DD2871C5B80016E3C1 /* CustomDisclosureGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DABF60F128369634001A5166 /* ColorPickerApp.swift */,
-				DABF60F328369634001A5166 /* ContentView.swift */,
-				DA229DE32843CF5000ADB44E /* PaddedList.swift */,
-				DABF61062837C0EB001A5166 /* ColorPickerPanel.swift */,
-				DABF60F528369636001A5166 /* Assets.xcassets */,
-				DABF60F728369636001A5166 /* Preview Content */,
+				DAF266DE2871C5B80016E3C1 /* CustomDisclosureGroupApp.swift */,
+				DAF266E02871C5B80016E3C1 /* ContentView.swift */,
+				DAF266E22871C5BA0016E3C1 /* Assets.xcassets */,
+				DAF266E42871C5BA0016E3C1 /* Preview Content */,
 			);
-			path = ColorPicker;
+			path = CustomDisclosureGroup;
 			sourceTree = "<group>";
 		};
-		DABF60F728369636001A5166 /* Preview Content */ = {
+		DAF266E42871C5BA0016E3C1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DABF60F828369636001A5166 /* Preview Assets.xcassets */,
+				DAF266E52871C5BA0016E3C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DABF60ED28369634001A5166 /* ColorPicker */ = {
+		DAF266DA2871C5B80016E3C1 /* CustomDisclosureGroup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DABF60FC28369636001A5166 /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildConfigurationList = DAF266E92871C5BA0016E3C1 /* Build configuration list for PBXNativeTarget "CustomDisclosureGroup" */;
 			buildPhases = (
-				DABF60EA28369634001A5166 /* Sources */,
-				DABF60EB28369634001A5166 /* Frameworks */,
-				DABF60EC28369634001A5166 /* Resources */,
+				DAF266D72871C5B80016E3C1 /* Sources */,
+				DAF266D82871C5B80016E3C1 /* Frameworks */,
+				DAF266D92871C5B80016E3C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ColorPicker;
-			productName = ColorPicker;
-			productReference = DABF60EE28369634001A5166 /* ColorPicker.app */;
+			name = CustomDisclosureGroup;
+			productName = CustomDisclosureGroup;
+			productReference = DAF266DB2871C5B80016E3C1 /* CustomDisclosureGroup.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DABF60E628369634001A5166 /* Project object */ = {
+		DAF266D32871C5B80016E3C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					DABF60ED28369634001A5166 = {
-						CreatedOnToolsVersion = 13.3;
+					DAF266DA2871C5B80016E3C1 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = DABF60E928369634001A5166 /* Build configuration list for PBXProject "ColorPicker" */;
+			buildConfigurationList = DAF266D62871C5B80016E3C1 /* Build configuration list for PBXProject "CustomDisclosureGroup" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = DABF60E528369634001A5166;
-			productRefGroup = DABF60EF28369634001A5166 /* Products */;
+			mainGroup = DAF266D22871C5B80016E3C1;
+			productRefGroup = DAF266DC2871C5B80016E3C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DABF60ED28369634001A5166 /* ColorPicker */,
+				DAF266DA2871C5B80016E3C1 /* CustomDisclosureGroup */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DABF60EC28369634001A5166 /* Resources */ = {
+		DAF266D92871C5B80016E3C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF60F928369636001A5166 /* Preview Assets.xcassets in Resources */,
-				DABF60F628369636001A5166 /* Assets.xcassets in Resources */,
+				DAF266E62871C5BA0016E3C1 /* Preview Assets.xcassets in Resources */,
+				DAF266E32871C5BA0016E3C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DABF60EA28369634001A5166 /* Sources */ = {
+		DAF266D72871C5B80016E3C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF60F428369634001A5166 /* ContentView.swift in Sources */,
-				DA229DE42843CF5000ADB44E /* PaddedList.swift in Sources */,
-				DABF60F228369634001A5166 /* ColorPickerApp.swift in Sources */,
-				DABF61072837C0EB001A5166 /* ColorPickerPanel.swift in Sources */,
+				DAF266E12871C5B80016E3C1 /* ContentView.swift in Sources */,
+				DAF266DF2871C5B80016E3C1 /* CustomDisclosureGroupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DABF60FA28369636001A5166 /* Debug */ = {
+		DAF266E72871C5BA0016E3C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -203,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -213,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		DABF60FB28369636001A5166 /* Release */ = {
+		DAF266E82871C5BA0016E3C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,14 +259,14 @@
 			};
 			name = Release;
 		};
-		DABF60FD28369636001A5166 /* Debug */ = {
+		DAF266EA2871C5BA0016E3C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ColorPicker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomDisclosureGroup/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -287,7 +279,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learnable.ColorPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnable.CustomDisclosureGroup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,14 +287,14 @@
 			};
 			name = Debug;
 		};
-		DABF60FE28369636001A5166 /* Release */ = {
+		DAF266EB2871C5BA0016E3C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ColorPicker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomDisclosureGroup/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learnable.ColorPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnable.CustomDisclosureGroup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DABF60E928369634001A5166 /* Build configuration list for PBXProject "ColorPicker" */ = {
+		DAF266D62871C5B80016E3C1 /* Build configuration list for PBXProject "CustomDisclosureGroup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DABF60FA28369636001A5166 /* Debug */,
-				DABF60FB28369636001A5166 /* Release */,
+				DAF266E72871C5BA0016E3C1 /* Debug */,
+				DAF266E82871C5BA0016E3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DABF60FC28369636001A5166 /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+		DAF266E92871C5BA0016E3C1 /* Build configuration list for PBXNativeTarget "CustomDisclosureGroup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DABF60FD28369636001A5166 /* Debug */,
-				DABF60FE28369636001A5166 /* Release */,
+				DAF266EA2871C5BA0016E3C1 /* Debug */,
+				DAF266EB2871C5BA0016E3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DABF60E628369634001A5166 /* Project object */;
+	rootObject = DAF266D32871C5B80016E3C1 /* Project object */;
 }
