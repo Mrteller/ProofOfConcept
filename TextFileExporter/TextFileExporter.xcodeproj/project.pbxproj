@@ -12,6 +12,7 @@
 		DA7F9807289284B700FAA118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9806289284B700FAA118 /* Assets.xcassets */; };
 		DA7F980A289284B700FAA118 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F9809289284B700FAA118 /* Preview Assets.xcassets */; };
 		DA7F98112892885A00FAA118 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F98102892885A00FAA118 /* TextFile.swift */; };
+		DA7F981328928ED900FAA118 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F981228928ED900FAA118 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DA7F9806289284B700FAA118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7F9809289284B700FAA118 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7F98102892885A00FAA118 /* TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		DA7F981228928ED900FAA118 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				DA7F9802289284B500FAA118 /* TextFileExporterApp.swift */,
 				DA7F9804289284B500FAA118 /* ContentView.swift */,
+				DA7F981228928ED900FAA118 /* ShareSheet.swift */,
 				DA7F98102892885A00FAA118 /* TextFile.swift */,
 				DA7F9806289284B700FAA118 /* Assets.xcassets */,
 				DA7F9808289284B700FAA118 /* Preview Content */,
@@ -143,6 +146,7 @@
 				DA7F98112892885A00FAA118 /* TextFile.swift in Sources */,
 				DA7F9805289284B500FAA118 /* ContentView.swift in Sources */,
 				DA7F9803289284B500FAA118 /* TextFileExporterApp.swift in Sources */,
+				DA7F981328928ED900FAA118 /* ShareSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
