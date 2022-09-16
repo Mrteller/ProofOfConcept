@@ -43,7 +43,7 @@ struct ContentView: View {
             } label: {
                 Label("Add completion", systemImage: "checkmark.circle")
             }
-            Divider() // unfortunately this is still necessary
+            //Divider() // unfortunately this is still necessary
             Button {
                 // action
                 showModifierDialog = false
@@ -62,6 +62,21 @@ extension View {
         return self.modifier(MyCustomModifier(isPresented: isPresented, actions: actions))
     }
 }
+
+
+// The code to go without `Divider`
+//extension View {
+//    func customConfirmDialog<A: View, B: View>(isPresented: Binding<Bool>, @ViewBuilder actions: @escaping () -> TupleView<(A, B)>) -> some View {
+//        return self.modifier(MyCustomModifier(isPresented: isPresented, actions: {
+//            let buttons = actions()
+//            VStack(alignment: .leading) {
+//                buttons.value.0
+//                Divider()
+//                buttons.value.1
+//            }
+//        }))
+//    }
+//}
 
 struct MyCustomModifier<A>: ViewModifier where A: View {
     
@@ -94,7 +109,7 @@ struct MyCustomModifier<A>: ViewModifier where A: View {
                             Button("Cancel", role: .cancel) {
                                 isPresented = false
                             }
-                            .bold()
+                            .font(.body.bold())
                             .frame(maxWidth: .infinity, alignment: .center)
                         }
                     }
