@@ -25,9 +25,12 @@ class UserManager: ObservableObject {
         //subscribe()
         tokenManager.objectWillChange
             .receive(on: RunLoop.main)
-            .sink { [weak self] item in
-                self?.objectWillChange.send()
+            .weakSink(self) { strongSelf, item in
+                strongSelf.objectWillChange.send()
             }
+//            .sink { [weak self] item in
+//                self?.objectWillChange.send()
+//            }
             .store(in: &cancellables)
     }
 }

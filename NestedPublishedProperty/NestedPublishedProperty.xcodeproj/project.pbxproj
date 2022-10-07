@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAB10ACB28F095E50074A2B2 /* WeakSinkAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB10ACA28F095E50074A2B2 /* WeakSinkAssign.swift */; };
 		DAC1DB4A28E72CE400EC0228 /* NestedPublishedPropertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1DB4928E72CE400EC0228 /* NestedPublishedPropertyApp.swift */; };
 		DAC1DB4C28E72CE400EC0228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1DB4B28E72CE400EC0228 /* ContentView.swift */; };
 		DAC1DB4E28E72CE700EC0228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC1DB4D28E72CE700EC0228 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DAB10ACA28F095E50074A2B2 /* WeakSinkAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSinkAssign.swift; sourceTree = "<group>"; };
 		DAC1DB4628E72CE400EC0228 /* NestedPublishedProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedPublishedProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC1DB4928E72CE400EC0228 /* NestedPublishedPropertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedPublishedPropertyApp.swift; sourceTree = "<group>"; };
 		DAC1DB4B28E72CE400EC0228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				DAC1DB4928E72CE400EC0228 /* NestedPublishedPropertyApp.swift */,
 				DAC1DB4B28E72CE400EC0228 /* ContentView.swift */,
 				DAC1DB5928E72D4500EC0228 /* UserManager.swift */,
+				DAB10ACA28F095E50074A2B2 /* WeakSinkAssign.swift */,
 				DAC1DB5728E72CF400EC0228 /* TokenManager.swift */,
 				DAC1DB4D28E72CE700EC0228 /* Assets.xcassets */,
 				DAC1DB4F28E72CE700EC0228 /* Preview Content */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB10ACB28F095E50074A2B2 /* WeakSinkAssign.swift in Sources */,
 				DAC1DB4C28E72CE400EC0228 /* ContentView.swift in Sources */,
 				DAC1DB5828E72CF400EC0228 /* TokenManager.swift in Sources */,
 				DAC1DB5A28E72D4500EC0228 /* UserManager.swift in Sources */,
