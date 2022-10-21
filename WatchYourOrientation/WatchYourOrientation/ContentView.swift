@@ -12,17 +12,23 @@ struct ContentView: View {
     @Orientation var orientation
     
     var body: some View {
-        VStack {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
+        return VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
         .padding()
-        .onChange(of: orientation) { _ in
-            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-            windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
-        }
+//        .onChange(of: orientation) { _ in
+//            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+//            windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
+//        }
+//        .onAppear() {
+//            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+//            windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
+//        }
     }
 }
 
