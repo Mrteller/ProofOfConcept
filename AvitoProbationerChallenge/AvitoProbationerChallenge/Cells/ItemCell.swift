@@ -1,5 +1,5 @@
 //
-//  BookCell.swift
+//  ItemCell.swift
 //  AvitoProbationerChallenge
 //
 //  Created by Paul on 29/08/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BookCell: UICollectionViewCell, Cell {
+class ItemCell: UICollectionViewCell, Cell {
 
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var coverImg: UIImageView!

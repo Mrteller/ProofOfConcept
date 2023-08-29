@@ -1,5 +1,5 @@
 //
-//  ClientBooksSection.swift
+//  UserItemsSection.swift
 //  AvitoProbationerChallenge
 //
 //  Created by Paul on 29/08/2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class ClientBooksSection: CollectionSection<ClientItem, ClientBookCell> {
+final class UserItemsSection: CollectionSection<UserItem, UserItemCell> {
 
-    static private let emptyViewKind = "EmptyClientBookSectionView"
+    static private let emptyViewKind = "EmptyUserItemSectionView"
 
-    private var emptyView: EmptyClientBookSectionView?
+    private var emptyView: EmptyUserItemSectionView?
     override var isEmpty: Bool {
         didSet {
             emptyView?.contentView.isHidden = !isEmpty
@@ -20,9 +20,9 @@ final class ClientBooksSection: CollectionSection<ClientItem, ClientBookCell> {
 
     override func registerCells(in collection: UICollectionView) {
         super.registerCells(in: collection)
-        collection.register(UINib(nibName: ClientBooksSection.emptyViewKind, bundle: nil),
-                            forSupplementaryViewOfKind: ClientBooksSection.emptyViewKind,
-                            withReuseIdentifier: ClientBooksSection.emptyViewKind)
+        collection.register(UINib(nibName: UserItemsSection.emptyViewKind, bundle: nil),
+                            forSupplementaryViewOfKind: UserItemsSection.emptyViewKind,
+                            withReuseIdentifier: UserItemsSection.emptyViewKind)
     }
 
     override func layout(environment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? {
@@ -38,7 +38,7 @@ final class ClientBooksSection: CollectionSection<ClientItem, ClientBookCell> {
                                                    heightDimension: .absolute(150.0))
 
         let left = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: emptyViewSize,
-                                                               elementKind: ClientBooksSection.emptyViewKind,
+                                                               elementKind: UserItemsSection.emptyViewKind,
                                                                alignment: .leading)
 
         let section = NSCollectionLayoutSection(group: group)
@@ -50,12 +50,12 @@ final class ClientBooksSection: CollectionSection<ClientItem, ClientBookCell> {
     override func supplementaryView(kind: String, for item: AnyHashable?, at indexPath: IndexPath, in collection: UICollectionView) -> UICollectionReusableView? {
         guard let emptyView = collection.dequeueReusableSupplementaryView(
             ofKind: kind,
-            withReuseIdentifier: ClientBooksSection.emptyViewKind,
-            for: indexPath) as? EmptyClientBookSectionView else {
+            withReuseIdentifier: UserItemsSection.emptyViewKind,
+            for: indexPath) as? EmptyUserItemSectionView else {
                 return nil
         }
         self.emptyView = emptyView
-        emptyView.contentView.isHidden = !isEmpty
+        emptyView.isHidden = !isEmpty
 
         return emptyView
     }

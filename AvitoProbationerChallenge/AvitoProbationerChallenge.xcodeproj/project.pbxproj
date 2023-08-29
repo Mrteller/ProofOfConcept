@@ -14,24 +14,24 @@
 		DAC2F2F82A9DDFB300B67623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F2F72A9DDFB300B67623 /* Assets.xcassets */; };
 		DAC2F2FB2A9DDFB300B67623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F2F92A9DDFB300B67623 /* LaunchScreen.storyboard */; };
 		DAC2F3062A9DE14500B67623 /* CollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3032A9DE14500B67623 /* CollectionSection.swift */; };
-		DAC2F3072A9DE14500B67623 /* ClientBooksSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3042A9DE14500B67623 /* ClientBooksSection.swift */; };
+		DAC2F3072A9DE14500B67623 /* UserItemsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3042A9DE14500B67623 /* UserItemsSection.swift */; };
 		DAC2F3082A9DE14500B67623 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3052A9DE14500B67623 /* Section.swift */; };
-		DAC2F3122A9DE17900B67623 /* ClientInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30A2A9DE17900B67623 /* ClientInfoCell.swift */; };
-		DAC2F3132A9DE17900B67623 /* ClientBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30B2A9DE17900B67623 /* ClientBookCell.xib */; };
-		DAC2F3142A9DE17900B67623 /* EmptyClientBookSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30C2A9DE17900B67623 /* EmptyClientBookSectionView.swift */; };
-		DAC2F3152A9DE17900B67623 /* EmptyClientBookSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30D2A9DE17900B67623 /* EmptyClientBookSectionView.xib */; };
-		DAC2F3162A9DE17900B67623 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30E2A9DE17900B67623 /* BookCell.swift */; };
-		DAC2F3172A9DE17900B67623 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30F2A9DE17900B67623 /* BookCell.xib */; };
-		DAC2F3182A9DE17900B67623 /* ClientBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3102A9DE17900B67623 /* ClientBookCell.swift */; };
-		DAC2F3192A9DE17900B67623 /* ClientInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3112A9DE17900B67623 /* ClientInfoCell.xib */; };
+		DAC2F3122A9DE17900B67623 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30A2A9DE17900B67623 /* UserInfoCell.swift */; };
+		DAC2F3132A9DE17900B67623 /* UserItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30B2A9DE17900B67623 /* UserItemCell.xib */; };
+		DAC2F3142A9DE17900B67623 /* EmptyUserItemSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30C2A9DE17900B67623 /* EmptyUserItemSectionView.swift */; };
+		DAC2F3152A9DE17900B67623 /* EmptyUserItemSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30D2A9DE17900B67623 /* EmptyUserItemSectionView.xib */; };
+		DAC2F3162A9DE17900B67623 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F30E2A9DE17900B67623 /* ItemCell.swift */; };
+		DAC2F3172A9DE17900B67623 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F30F2A9DE17900B67623 /* ItemCell.xib */; };
+		DAC2F3182A9DE17900B67623 /* UserItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3102A9DE17900B67623 /* UserItemCell.swift */; };
+		DAC2F3192A9DE17900B67623 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3112A9DE17900B67623 /* UserInfoCell.xib */; };
 		DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31B2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift */; };
-		DAC2F3212A9DE19800B67623 /* ClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31E2A9DE19700B67623 /* ClientInfo.swift */; };
+		DAC2F3212A9DE19800B67623 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31E2A9DE19700B67623 /* UserInfo.swift */; };
 		DAC2F3222A9DE19800B67623 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31F2A9DE19700B67623 /* Item.swift */; };
-		DAC2F3232A9DE19800B67623 /* ClientItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3202A9DE19700B67623 /* ClientItem.swift */; };
+		DAC2F3232A9DE19800B67623 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3202A9DE19700B67623 /* UserItem.swift */; };
 		DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3252A9DE19E00B67623 /* Cell.swift */; };
 		DAC2F3282A9DE1B100B67623 /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */; };
 		DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3292A9DF58A00B67623 /* CollectionAdapterDelegate.swift */; };
-		DAC2F32C2A9DF61200B67623 /* ClientBookCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32B2A9DF61200B67623 /* ClientBookCellDelegate.swift */; };
+		DAC2F32C2A9DF61200B67623 /* UserItemCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,24 +44,24 @@
 		DAC2F2FA2A9DDFB300B67623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAC2F2FC2A9DDFB300B67623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC2F3032A9DE14500B67623 /* CollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSection.swift; sourceTree = "<group>"; };
-		DAC2F3042A9DE14500B67623 /* ClientBooksSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientBooksSection.swift; sourceTree = "<group>"; };
+		DAC2F3042A9DE14500B67623 /* UserItemsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemsSection.swift; sourceTree = "<group>"; };
 		DAC2F3052A9DE14500B67623 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		DAC2F30A2A9DE17900B67623 /* ClientInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInfoCell.swift; sourceTree = "<group>"; };
-		DAC2F30B2A9DE17900B67623 /* ClientBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientBookCell.xib; sourceTree = "<group>"; };
-		DAC2F30C2A9DE17900B67623 /* EmptyClientBookSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyClientBookSectionView.swift; sourceTree = "<group>"; };
-		DAC2F30D2A9DE17900B67623 /* EmptyClientBookSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyClientBookSectionView.xib; sourceTree = "<group>"; };
-		DAC2F30E2A9DE17900B67623 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		DAC2F30F2A9DE17900B67623 /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
-		DAC2F3102A9DE17900B67623 /* ClientBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientBookCell.swift; sourceTree = "<group>"; };
-		DAC2F3112A9DE17900B67623 /* ClientInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientInfoCell.xib; sourceTree = "<group>"; };
+		DAC2F30A2A9DE17900B67623 /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		DAC2F30B2A9DE17900B67623 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
+		DAC2F30C2A9DE17900B67623 /* EmptyUserItemSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyUserItemSectionView.swift; sourceTree = "<group>"; };
+		DAC2F30D2A9DE17900B67623 /* EmptyUserItemSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyUserItemSectionView.xib; sourceTree = "<group>"; };
+		DAC2F30E2A9DE17900B67623 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		DAC2F30F2A9DE17900B67623 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		DAC2F3102A9DE17900B67623 /* UserItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemCell.swift; sourceTree = "<group>"; };
+		DAC2F3112A9DE17900B67623 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		DAC2F31B2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+Sections.swift"; sourceTree = "<group>"; };
-		DAC2F31E2A9DE19700B67623 /* ClientInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInfo.swift; sourceTree = "<group>"; };
+		DAC2F31E2A9DE19700B67623 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DAC2F31F2A9DE19700B67623 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		DAC2F3202A9DE19700B67623 /* ClientItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientItem.swift; sourceTree = "<group>"; };
+		DAC2F3202A9DE19700B67623 /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		DAC2F3252A9DE19E00B67623 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
 		DAC2F3292A9DF58A00B67623 /* CollectionAdapterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapterDelegate.swift; sourceTree = "<group>"; };
-		DAC2F32B2A9DF61200B67623 /* ClientBookCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientBookCellDelegate.swift; sourceTree = "<group>"; };
+		DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			children = (
 				DAC2F3052A9DE14500B67623 /* Section.swift */,
 				DAC2F3032A9DE14500B67623 /* CollectionSection.swift */,
-				DAC2F3042A9DE14500B67623 /* ClientBooksSection.swift */,
+				DAC2F3042A9DE14500B67623 /* UserItemsSection.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -124,14 +124,14 @@
 		DAC2F3092A9DE17900B67623 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DAC2F30A2A9DE17900B67623 /* ClientInfoCell.swift */,
-				DAC2F3112A9DE17900B67623 /* ClientInfoCell.xib */,
-				DAC2F30C2A9DE17900B67623 /* EmptyClientBookSectionView.swift */,
-				DAC2F30D2A9DE17900B67623 /* EmptyClientBookSectionView.xib */,
-				DAC2F30E2A9DE17900B67623 /* BookCell.swift */,
-				DAC2F30F2A9DE17900B67623 /* BookCell.xib */,
-				DAC2F3102A9DE17900B67623 /* ClientBookCell.swift */,
-				DAC2F30B2A9DE17900B67623 /* ClientBookCell.xib */,
+				DAC2F30A2A9DE17900B67623 /* UserInfoCell.swift */,
+				DAC2F3112A9DE17900B67623 /* UserInfoCell.xib */,
+				DAC2F30C2A9DE17900B67623 /* EmptyUserItemSectionView.swift */,
+				DAC2F30D2A9DE17900B67623 /* EmptyUserItemSectionView.xib */,
+				DAC2F30E2A9DE17900B67623 /* ItemCell.swift */,
+				DAC2F30F2A9DE17900B67623 /* ItemCell.xib */,
+				DAC2F3102A9DE17900B67623 /* UserItemCell.swift */,
+				DAC2F30B2A9DE17900B67623 /* UserItemCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 		DAC2F31D2A9DE19700B67623 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DAC2F31E2A9DE19700B67623 /* ClientInfo.swift */,
+				DAC2F31E2A9DE19700B67623 /* UserInfo.swift */,
 				DAC2F31F2A9DE19700B67623 /* Item.swift */,
-				DAC2F3202A9DE19700B67623 /* ClientItem.swift */,
+				DAC2F3202A9DE19700B67623 /* UserItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			children = (
 				DAC2F3252A9DE19E00B67623 /* Cell.swift */,
 				DAC2F3292A9DF58A00B67623 /* CollectionAdapterDelegate.swift */,
-				DAC2F32B2A9DF61200B67623 /* ClientBookCellDelegate.swift */,
+				DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -223,12 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC2F2FB2A9DDFB300B67623 /* LaunchScreen.storyboard in Resources */,
-				DAC2F3132A9DE17900B67623 /* ClientBookCell.xib in Resources */,
-				DAC2F3172A9DE17900B67623 /* BookCell.xib in Resources */,
+				DAC2F3132A9DE17900B67623 /* UserItemCell.xib in Resources */,
+				DAC2F3172A9DE17900B67623 /* ItemCell.xib in Resources */,
 				DAC2F2F82A9DDFB300B67623 /* Assets.xcassets in Resources */,
-				DAC2F3152A9DE17900B67623 /* EmptyClientBookSectionView.xib in Resources */,
+				DAC2F3152A9DE17900B67623 /* EmptyUserItemSectionView.xib in Resources */,
 				DAC2F2F62A9DDFAF00B67623 /* Main.storyboard in Resources */,
-				DAC2F3192A9DE17900B67623 /* ClientInfoCell.xib in Resources */,
+				DAC2F3192A9DE17900B67623 /* UserInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,23 +239,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC2F3162A9DE17900B67623 /* BookCell.swift in Sources */,
-				DAC2F3142A9DE17900B67623 /* EmptyClientBookSectionView.swift in Sources */,
+				DAC2F3162A9DE17900B67623 /* ItemCell.swift in Sources */,
+				DAC2F3142A9DE17900B67623 /* EmptyUserItemSectionView.swift in Sources */,
 				DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */,
 				DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */,
-				DAC2F3232A9DE19800B67623 /* ClientItem.swift in Sources */,
+				DAC2F3232A9DE19800B67623 /* UserItem.swift in Sources */,
 				DAC2F2F32A9DDFAF00B67623 /* ItemsListViewController.swift in Sources */,
 				DAC2F2EF2A9DDFAF00B67623 /* AppDelegate.swift in Sources */,
 				DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */,
 				DAC2F2F12A9DDFAF00B67623 /* SceneDelegate.swift in Sources */,
 				DAC2F3082A9DE14500B67623 /* Section.swift in Sources */,
-				DAC2F3122A9DE17900B67623 /* ClientInfoCell.swift in Sources */,
-				DAC2F3072A9DE14500B67623 /* ClientBooksSection.swift in Sources */,
+				DAC2F3122A9DE17900B67623 /* UserInfoCell.swift in Sources */,
+				DAC2F3072A9DE14500B67623 /* UserItemsSection.swift in Sources */,
 				DAC2F3062A9DE14500B67623 /* CollectionSection.swift in Sources */,
-				DAC2F3212A9DE19800B67623 /* ClientInfo.swift in Sources */,
+				DAC2F3212A9DE19800B67623 /* UserInfo.swift in Sources */,
 				DAC2F3222A9DE19800B67623 /* Item.swift in Sources */,
-				DAC2F3182A9DE17900B67623 /* ClientBookCell.swift in Sources */,
-				DAC2F32C2A9DF61200B67623 /* ClientBookCellDelegate.swift in Sources */,
+				DAC2F3182A9DE17900B67623 /* UserItemCell.swift in Sources */,
+				DAC2F32C2A9DF61200B67623 /* UserItemCellDelegate.swift in Sources */,
 				DAC2F3282A9DE1B100B67623 /* CollectionAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

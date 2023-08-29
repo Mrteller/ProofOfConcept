@@ -1,5 +1,5 @@
 //
-//  ClientInfo.swift
+//  UserInfo.swift
 //  AvitoProbationerChallenge
 //
 //  Created by Paul on 29/08/2023.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct ClientInfo {
+struct UserInfo {
     let id: String
-    let clientName: String
-    let maxBooksAmount: Int
-    var booksAmount: Int
+    let userName: String
+    let maxItemsAmount: Int
+    var itemsAmount: Int
 }
 
-extension ClientInfo: Hashable {
+extension UserInfo: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

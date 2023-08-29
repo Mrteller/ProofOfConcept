@@ -10,20 +10,20 @@ import UIKit
 final class ItemsListViewController: UIViewController {
     
     enum CollectionSections: String {
-        case clientSection
-        case clientBookSection
-        case bookSection
+        case userSection
+        case userItemSection
+        case itemSection
     }
     
     @IBOutlet weak var collection: UICollectionView!
     lazy var adapter = CollectionAdapter(collection: self.collection, delegate: self)
     
-    var clientInfo = ClientInfo(id: UUID().uuidString,
-                                clientName: "John Doe",
-                                maxBooksAmount: 5,
-                                booksAmount: 0)
-    var clientBooks: [ClientItem] = []
-    var books = Item.fakeItems
+    var userInfo = UserInfo(id: UUID().uuidString,
+                                userName: "John Doe",
+                                maxItemsAmount: 5,
+                                itemsAmount: 0)
+    var selectedItems: [UserItem] = []
+    var items = Item.fakeItems
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,63 +36,63 @@ final class ItemsListViewController: UIViewController {
 
 extension ItemsListViewController: CollectionAdapterDelegate {
     func sections() -> [Section] {
-        let clientSection = CollectionSection<ClientInfo, ClientInfoCell>(id: CollectionSections.clientSection.rawValue)
-        clientSection.layout = { env in
+        let userSection = CollectionSection<UserInfo, UserInfoCell>(id: CollectionSections.userSection.rawValue)
+        userSection.layout = { env in
             return NSCollectionLayoutSection.listLayout(environment: env, height: .estimated(90))
         }
         
-        let clientBookSection = ClientBooksSection(id: CollectionSections.clientBookSection.rawValue)
-        clientBookSection.cellConfiguration = { cell in
+        let userItemSection = UserItemsSection(id: CollectionSections.userItemSection.rawValue)
+        userItemSection.cellConfiguration = { cell in
             cell.delegate = self
         }
         
-        let booksSection = CollectionSection<Item, BookCell>(id: CollectionSections.bookSection.rawValue)
-        booksSection.layout = { env in
+        let itemsSection = CollectionSection<Item, ItemCell>(id: CollectionSections.itemSection.rawValue)
+        itemsSection.layout = { env in
             return NSCollectionLayoutSection.gridLayout(environment: env, height: .estimated(300), compactItems: 2, regularItems: 4)
         }
-        booksSection.cellSelection = { [weak self] book, index in
-            self?.didSelect(book: book, at: index)
+        itemsSection.cellSelection = { [weak self] item, index in
+            self?.didSelect(item: item, at: index)
         }
         
-        return [clientSection, clientBookSection, booksSection]
+        return [userSection, userItemSection, itemsSection]
     }
     
     func itemsFor(section: Section) -> [AnyHashable] {
         switch section {
-        case is CollectionSection<ClientInfo, ClientInfoCell>:
-            return [clientInfo]
-        case is ClientBooksSection:
-            return clientBooks
-        case is CollectionSection<Item, BookCell>:
-            return books
+        case is CollectionSection<UserInfo, UserInfoCell>:
+            return [userInfo]
+        case is UserItemsSection:
+            return selectedItems
+        case is CollectionSection<Item, ItemCell>:
+            return items
         default:
             return []
         }
     }
     
-    func didSelect(book: Item, at index: Int) {
-        books[index].isSelected.toggle()
-        let book = books[index]
-        if book.isSelected && clientInfo.booksAmount != clientInfo.maxBooksAmount {
-            clientInfo.booksAmount += 1
-            clientBooks.append(ClientItem(book: book))
-        } else if !book.isSelected, let clientBookIndex = clientBooks.firstIndex(where: { $0.id == book.id }) {
-            clientInfo.booksAmount -= 1
-            clientBooks.remove(at: clientBookIndex)
+    func didSelect(item: Item, at index: Int) {
+        items[index].isSelected.toggle()
+        let item = items[index]
+        if item.isSelected && userInfo.itemsAmount != userInfo.maxItemsAmount {
+            userInfo.itemsAmount += 1
+            selectedItems.append(UserItem(item: item))
+        } else if !item.isSelected, let userItemIndex = selectedItems.firstIndex(where: { $0.id == item.id }) {
+            userInfo.itemsAmount -= 1
+            selectedItems.remove(at: userItemIndex)
         }
         adapter.performUpdates(animated: true)
     }
 }
 
-extension ItemsListViewController: ClientBookCellDelegate {
-    func didTapReturn(book: ClientItem) {
-        guard let index = clientBooks.firstIndex(of: book) else {
+extension ItemsListViewController: UserItemCellDelegate {
+    func didTapMark(item: UserItem) {
+        guard let index = selectedItems.firstIndex(of: item) else {
             return
         }
-        clientInfo.booksAmount -= 1
-        clientBooks.remove(at: index)
-        if let bookIndex = books.firstIndex(where: { $0.id == book.id }) {
-            books[bookIndex].isSelected.toggle()
+        userInfo.itemsAmount -= 1
+        selectedItems.remove(at: index)
+        if let itemIndex = items.firstIndex(where: { $0.id == item.id }) {
+            items[itemIndex].isSelected.toggle()
         }
         adapter.performUpdates(animated: true)
     }
