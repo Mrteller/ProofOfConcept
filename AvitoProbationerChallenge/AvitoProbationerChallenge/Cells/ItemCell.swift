@@ -27,13 +27,16 @@ class ItemCell: UICollectionViewCell, Cell {
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
         shadowView.layer.shadowRadius = 6
     }
-
-    func configure(with object: Item) {
-        coverImg.image = object.cover
-        nameLbl.text = object.name
-        yearLbl.text = "\(object.year)"
-        pagesLbl.text = "\(object.amountPages)"
-        descriptionLbl.text = object.description
+    
+    func configure(with object: ItemVM<Item>) {
+        nameLbl.text = object.item.title
+        yearLbl.text = "\(object.item.price)"
+        pagesLbl.text = "\(object.item.location)"
+        descriptionLbl.text = object.item.description
         checkmark.isHidden = !object.isSelected
+        // TODO: Refactor to async
+        guard let imageURL = URL(string: object.item.imageURL),
+        let imageData = try? Data(contentsOf: imageURL, options: .alwaysMapped) else { return }
+        coverImg.image = UIImage(data: imageData)
     }
 }

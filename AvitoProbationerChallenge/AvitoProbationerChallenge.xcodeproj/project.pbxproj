@@ -26,12 +26,14 @@
 		DAC2F3192A9DE17900B67623 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3112A9DE17900B67623 /* UserInfoCell.xib */; };
 		DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31B2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift */; };
 		DAC2F3212A9DE19800B67623 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31E2A9DE19700B67623 /* UserInfo.swift */; };
-		DAC2F3222A9DE19800B67623 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31F2A9DE19700B67623 /* Item.swift */; };
-		DAC2F3232A9DE19800B67623 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3202A9DE19700B67623 /* UserItem.swift */; };
+		DAC2F3222A9DE19800B67623 /* ItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F31F2A9DE19700B67623 /* ItemVM.swift */; };
+		DAC2F3232A9DE19800B67623 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3202A9DE19700B67623 /* Item.swift */; };
 		DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3252A9DE19E00B67623 /* Cell.swift */; };
 		DAC2F3282A9DE1B100B67623 /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */; };
 		DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3292A9DF58A00B67623 /* CollectionAdapterDelegate.swift */; };
 		DAC2F32C2A9DF61200B67623 /* UserItemCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */; };
+		DAC2F32F2A9E45C400B67623 /* ItemsResponse+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32E2A9E45C300B67623 /* ItemsResponse+.swift */; };
+		DAC2F3312A9E45D100B67623 /* UserItems.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3302A9E45D100B67623 /* UserItems.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +58,15 @@
 		DAC2F3112A9DE17900B67623 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		DAC2F31B2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+Sections.swift"; sourceTree = "<group>"; };
 		DAC2F31E2A9DE19700B67623 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		DAC2F31F2A9DE19700B67623 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		DAC2F3202A9DE19700B67623 /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		DAC2F31F2A9DE19700B67623 /* ItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemVM.swift; sourceTree = "<group>"; };
+		DAC2F3202A9DE19700B67623 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DAC2F3252A9DE19E00B67623 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
 		DAC2F3292A9DF58A00B67623 /* CollectionAdapterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapterDelegate.swift; sourceTree = "<group>"; };
 		DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemCellDelegate.swift; sourceTree = "<group>"; };
+		DAC2F32E2A9E45C300B67623 /* ItemsResponse+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemsResponse+.swift"; sourceTree = "<group>"; };
+		DAC2F3302A9E45D100B67623 /* UserItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserItems.json; sourceTree = "<group>"; };
+		DAC2F3322A9E4CC800B67623 /* Item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Item.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,7 @@
 				DAC2F31D2A9DE19700B67623 /* Models */,
 				DAC2F3242A9DE19E00B67623 /* Protocols */,
 				DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */,
+				DAC2F32D2A9E45AD00B67623 /* Mock */,
 				DAC2F2EE2A9DDFAF00B67623 /* AppDelegate.swift */,
 				DAC2F2F02A9DDFAF00B67623 /* SceneDelegate.swift */,
 				DAC2F2F22A9DDFAF00B67623 /* ItemsListViewController.swift */,
@@ -148,8 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				DAC2F31E2A9DE19700B67623 /* UserInfo.swift */,
-				DAC2F31F2A9DE19700B67623 /* Item.swift */,
-				DAC2F3202A9DE19700B67623 /* UserItem.swift */,
+				DAC2F31F2A9DE19700B67623 /* ItemVM.swift */,
+				DAC2F3202A9DE19700B67623 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +168,16 @@
 				DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DAC2F32D2A9E45AD00B67623 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2F32E2A9E45C300B67623 /* ItemsResponse+.swift */,
+				DAC2F3302A9E45D100B67623 /* UserItems.json */,
+				DAC2F3322A9E4CC800B67623 /* Item.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +241,7 @@
 				DAC2F2FB2A9DDFB300B67623 /* LaunchScreen.storyboard in Resources */,
 				DAC2F3132A9DE17900B67623 /* UserItemCell.xib in Resources */,
 				DAC2F3172A9DE17900B67623 /* ItemCell.xib in Resources */,
+				DAC2F3312A9E45D100B67623 /* UserItems.json in Resources */,
 				DAC2F2F82A9DDFB300B67623 /* Assets.xcassets in Resources */,
 				DAC2F3152A9DE17900B67623 /* EmptyUserItemSectionView.xib in Resources */,
 				DAC2F2F62A9DDFAF00B67623 /* Main.storyboard in Resources */,
@@ -239,11 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC2F32F2A9E45C400B67623 /* ItemsResponse+.swift in Sources */,
 				DAC2F3162A9DE17900B67623 /* ItemCell.swift in Sources */,
 				DAC2F3142A9DE17900B67623 /* EmptyUserItemSectionView.swift in Sources */,
 				DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */,
 				DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */,
-				DAC2F3232A9DE19800B67623 /* UserItem.swift in Sources */,
+				DAC2F3232A9DE19800B67623 /* Item.swift in Sources */,
 				DAC2F2F32A9DDFAF00B67623 /* ItemsListViewController.swift in Sources */,
 				DAC2F2EF2A9DDFAF00B67623 /* AppDelegate.swift in Sources */,
 				DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */,
@@ -253,7 +271,7 @@
 				DAC2F3072A9DE14500B67623 /* UserItemsSection.swift in Sources */,
 				DAC2F3062A9DE14500B67623 /* CollectionSection.swift in Sources */,
 				DAC2F3212A9DE19800B67623 /* UserInfo.swift in Sources */,
-				DAC2F3222A9DE19800B67623 /* Item.swift in Sources */,
+				DAC2F3222A9DE19800B67623 /* ItemVM.swift in Sources */,
 				DAC2F3182A9DE17900B67623 /* UserItemCell.swift in Sources */,
 				DAC2F32C2A9DF61200B67623 /* UserItemCellDelegate.swift in Sources */,
 				DAC2F3282A9DE1B100B67623 /* CollectionAdapter.swift in Sources */,

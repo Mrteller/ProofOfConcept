@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UserItemCellDelegate: AnyObject {
-    func didTapMark(item: UserItem)
+    func didTapMark(item: Item)
 }

@@ -15,7 +15,7 @@ class UserItemCell: UICollectionViewCell, Cell {
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var coverImg: UIImageView!
 
-    private var item: UserItem?
+    private var item: Item?
     weak var delegate: UserItemCellDelegate?
 
     override func awakeFromNib() {
@@ -34,12 +34,14 @@ class UserItemCell: UICollectionViewCell, Cell {
         delegate?.didTapMark(item: item)
     }
 
-    func configure(with object: UserItem) {
+    func configure(with object: Item) {
         self.item = object
         
-        itemNameLbl.text = object.name
-        yearLbl.text = "\(object.year)"
-        pagesLbl.text = "\(object.amountPages)"
-        coverImg.image = object.cover
+        itemNameLbl.text = object.title
+        yearLbl.text = "\(object.price)"
+        pagesLbl.text = "\(object.location)"
+        guard let imageURL = URL(string: object.imageURL),
+              let imageData = try? Data(contentsOf: imageURL, options: .alwaysMapped) else { return }
+        coverImg.image = UIImage(data: imageData)
     }
 }

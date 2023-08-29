@@ -22,8 +22,8 @@ final class ItemsListViewController: UIViewController {
                                 userName: "John Doe",
                                 maxItemsAmount: 5,
                                 itemsAmount: 0)
-    var selectedItems: [UserItem] = []
-    var items = Item.fakeItems
+    var selectedItems: [Item] = []
+    var itemsVM = ItemsResponse.sample?.advertisements.compactMap{ ItemVM(item: $0) } ?? []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ extension ItemsListViewController: CollectionAdapterDelegate {
             cell.delegate = self
         }
         
-        let itemsSection = CollectionSection<Item, ItemCell>(id: CollectionSections.itemSection.rawValue)
+        let itemsSection = CollectionSection<ItemVM, ItemCell>(id: CollectionSections.itemSection.rawValue)
         itemsSection.layout = { env in
             return NSCollectionLayoutSection.gridLayout(environment: env, height: .estimated(300), compactItems: 2, regularItems: 4)
         }
@@ -63,20 +63,20 @@ extension ItemsListViewController: CollectionAdapterDelegate {
             return [userInfo]
         case is UserItemsSection:
             return selectedItems
-        case is CollectionSection<Item, ItemCell>:
-            return items
+        case is CollectionSection<ItemVM<Item>, ItemCell>:
+            return itemsVM
         default:
             return []
         }
     }
     
-    func didSelect(item: Item, at index: Int) {
-        items[index].isSelected.toggle()
-        let item = items[index]
-        if item.isSelected && userInfo.itemsAmount != userInfo.maxItemsAmount {
+    func didSelect(item: ItemVM<Item>, at index: Int) {
+        itemsVM[index].isSelected.toggle()
+        let itemVM = itemsVM[index]
+        if itemVM.isSelected && userInfo.itemsAmount != userInfo.maxItemsAmount {
             userInfo.itemsAmount += 1
-            selectedItems.append(UserItem(item: item))
-        } else if !item.isSelected, let userItemIndex = selectedItems.firstIndex(where: { $0.id == item.id }) {
+            selectedItems.append(itemVM.item)
+        } else if !itemVM.isSelected, let userItemIndex = selectedItems.firstIndex(where: { $0.id == itemVM.id }) {
             userInfo.itemsAmount -= 1
             selectedItems.remove(at: userItemIndex)
         }
@@ -85,14 +85,14 @@ extension ItemsListViewController: CollectionAdapterDelegate {
 }
 
 extension ItemsListViewController: UserItemCellDelegate {
-    func didTapMark(item: UserItem) {
+    func didTapMark(item: Item) {
         guard let index = selectedItems.firstIndex(of: item) else {
             return
         }
         userInfo.itemsAmount -= 1
         selectedItems.remove(at: index)
-        if let itemIndex = items.firstIndex(where: { $0.id == item.id }) {
-            items[itemIndex].isSelected.toggle()
+        if let itemIndex = itemsVM.firstIndex(where: { $0.id == item.id }) {
+            itemsVM[itemIndex].isSelected.toggle()
         }
         adapter.performUpdates(animated: true)
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class UserItemsSection: CollectionSection<UserItem, UserItemCell> {
+final class UserItemsSection: CollectionSection<Item, UserItemCell> {
 
     static private let emptyViewKind = "EmptyUserItemSectionView"
 

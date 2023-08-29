@@ -1,0 +1,244 @@
+{
+    "advertisements": [
+        {
+            "id": "1",
+            "title": "Смартфон Apple iPhone 12",
+            "price": "55000 ₽",
+            "location": "Москва",
+            "image_url": "https://www.avito.st/s/interns-ios/images/1.png",
+            "created_date": "2023-08-16"
+        },
+        {
+            "id": "2",
+            "title": "Ноутбук Dell XPS 15",
+            "price": "95000 ₽",
+            "location": "Санкт-Петербург",
+            "image_url": "https://www.avito.st/s/interns-ios/images/2.png",
+            "created_date": "2023-08-15"
+        },
+        {
+            "id": "3",
+            "title": "Кофемашина DeLonghi",
+            "price": "25000 ₽",
+            "location": "Екатеринбург",
+            "image_url": "https://www.avito.st/s/interns-ios/images/3.png",
+            "created_date": "2023-08-14"
+        },
+        {
+            "id": "4",
+            "title": "Спортивные кроссовки Nike",
+            "price": "4500 ₽",
+            "location": "Красноярск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/4.png",
+            "created_date": "2023-08-13"
+        },
+        {
+            "id": "5",
+            "title": "Смарт-часы Samsung Galaxy Watch",
+            "price": "15000 ₽",
+            "location": "Новосибирск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/5.png",
+            "created_date": "2023-08-12"
+        },
+        {
+            "id": "6",
+            "title": "Камера Canon EOS 5D Mark IV",
+            "price": "85000 ₽",
+            "location": "Казань",
+            "image_url": "https://www.avito.st/s/interns-ios/images/6.png",
+            "created_date": "2023-08-11"
+        },
+        {
+            "id": "7",
+            "title": "Телевизор LG OLED65CX",
+            "price": "120000 ₽",
+            "location": "Уфа",
+            "image_url": "https://www.avito.st/s/interns-ios/images/7.png",
+            "created_date": "2023-08-10"
+        },
+        {
+            "id": "8",
+            "title": "Стиральная машина Bosch",
+            "price": "35000 ₽",
+            "location": "Пермь",
+            "image_url": "https://www.avito.st/s/interns-ios/images/8.png",
+            "created_date": "2023-08-09"
+        },
+        {
+            "id": "9",
+            "title": "Микроволновая печь Samsung",
+            "price": "7500 ₽",
+            "location": "Воронеж",
+            "image_url": "https://www.avito.st/s/interns-ios/images/9.png",
+            "created_date": "2023-08-08"
+        },
+        {
+            "id": "10",
+            "title": "Стол компьютерный",
+            "price": "3000 ₽",
+            "location": "Ростов-на-Дону",
+            "image_url": "https://www.avito.st/s/interns-ios/images/10.png",
+            "created_date": "2023-08-07"
+        },
+        {
+            "id": "11",
+            "title": "Наушники Sony WH-1000XM4",
+            "price": "20000 ₽",
+            "location": "Уфа",
+            "image_url": "https://www.avito.st/s/interns-ios/images/11.png",
+            "created_date": "2023-08-06"
+        },
+        {
+            "id": "12",
+            "title": "Монитор LG 27GL850-B",
+            "price": "30000 ₽",
+            "location": "Самара",
+            "image_url": "https://www.avito.st/s/interns-ios/images/12.png",
+            "created_date": "2023-08-05"
+        },
+        {
+            "id": "13",
+            "title": "Кресло мешок BigJoe",
+            "price": "5000 ₽",
+            "location": "Нижний Новгород",
+            "image_url": "https://www.avito.st/s/interns-ios/images/13.png",
+            "created_date": "2023-08-04"
+        },
+        {
+            "id": "14",
+            "title": "Детский велосипед",
+            "price": "7000 ₽",
+            "location": "Омск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/14.png",
+            "created_date": "2023-08-03"
+        },
+        {
+            "id": "15",
+            "title": "Гитара Fender Stratocaster",
+            "price": "25000 ₽",
+            "location": "Тюмень",
+            "image_url": "https://www.avito.st/s/interns-ios/images/15.png",
+            "created_date": "2023-08-02"
+        },
+        {
+            "id": "16",
+            "title": "Мягкий диван",
+            "price": "15000 ₽",
+            "location": "Иркутск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/16.png",
+            "created_date": "2023-08-01"
+        },
+        {
+            "id": "17",
+            "title": "Пылесос Philips",
+            "price": "6000 ₽",
+            "location": "Челябинск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/17.png",
+            "created_date": "2023-07-31"
+        },
+        {
+            "id": "18",
+            "title": "Смеситель для ванной",
+            "price": "2000 ₽",
+            "location": "Новокузнецк",
+            "image_url": "https://www.avito.st/s/interns-ios/images/18.png",
+            "created_date": "2023-07-30"
+        },
+        {
+            "id": "19",
+            "title": "Шкаф-купе",
+            "price": "12000 ₽",
+            "location": "Саратов",
+            "image_url": "https://www.avito.st/s/interns-ios/images/19.png",
+            "created_date": "2023-07-29"
+        },
+        {
+            "id": "20",
+            "title": "Чайник электрический",
+            "price": "1500 ₽",
+            "location": "Краснодар",
+            "image_url": "https://www.avito.st/s/interns-ios/images/20.png",
+            "created_date": "2023-07-28"
+        },
+        {
+            "id": "21",
+            "title": "Блендер Bosch",
+            "price": "3500 ₽",
+            "location": "Волгоград",
+            "image_url": "https://www.avito.st/s/interns-ios/images/21.png",
+            "created_date": "2023-07-27"
+        },
+        {
+            "id": "22",
+            "title": "Утюг Tefal",
+            "price": "1800 ₽",
+            "location": "Сочи",
+            "image_url": "https://www.avito.st/s/interns-ios/images/22.png",
+            "created_date": "2023-07-26"
+        },
+        {
+            "id": "23",
+            "title": "Фотоаппарат Nikon D5600",
+            "price": "40000 ₽",
+            "location": "Краснодар",
+            "image_url": "https://www.avito.st/s/interns-ios/images/23.png",
+            "created_date": "2023-07-25"
+        },
+        {
+            "id": "24",
+            "title": "Электрогитара Ibanez",
+            "price": "22000 ₽",
+            "location": "Тверь",
+            "image_url": "https://www.avito.st/s/interns-ios/images/24.png",
+            "created_date": "2023-07-24"
+        },
+        {
+            "id": "25",
+            "title": "Массажное кресло",
+            "price": "38000 ₽",
+            "location": "Казань",
+            "image_url": "https://www.avito.st/s/interns-ios/images/25.png",
+            "created_date": "2023-07-23"
+        },
+        {
+            "id": "26",
+            "title": "Кухонный гарнитур",
+            "price": "55000 ₽",
+            "location": "Новосибирск",
+            "image_url": "https://www.avito.st/s/interns-ios/images/26.png",
+            "created_date": "2023-07-22"
+        },
+        {
+            "id": "27",
+            "title": "Тренажер велотренажер",
+            "price": "7000 ₽",
+            "location": "Екатеринбург",
+            "image_url": "https://www.avito.st/s/interns-ios/images/27.png",
+            "created_date": "2023-07-21"
+        },
+        {
+            "id": "28",
+            "title": "Монитор Dell Ultrasharp",
+            "price": "24000 ₽",
+            "location": "Уфа",
+            "image_url": "https://www.avito.st/s/interns-ios/images/28.png",
+            "created_date": "2023-07-20"
+        },
+        {
+            "id": "29",
+            "title": "Сковорода Tefal",
+            "price": "1300 ₽",
+            "location": "Самара",
+            "image_url": "https://www.avito.st/s/interns-ios/images/29.png",
+            "created_date": "2023-07-19"
+        },
+        {
+            "id": "30",
+            "title": "Кресло-качалка",
+            "price": "3000 ₽",
+            "location": "Воронеж",
+            "image_url": "https://www.avito.st/s/interns-ios/images/30.png",
+            "created_date": "2023-07-18"
+        }
+    ]
+}
