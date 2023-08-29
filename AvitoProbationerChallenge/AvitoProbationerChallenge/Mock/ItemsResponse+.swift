@@ -9,7 +9,7 @@ import Foundation
 
 extension ItemsResponse {
     static var sample: ItemsResponse? {
-        guard let url = Bundle.main.url(forResource: "UserItems", withExtension: "json"),
+        guard let url = Bundle.main.url(forResource: "ItemsResponse", withExtension: "json"),
               let data = try? Data(contentsOf: url) else {
             return nil
         }

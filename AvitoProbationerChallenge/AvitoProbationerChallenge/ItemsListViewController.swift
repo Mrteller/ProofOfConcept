@@ -28,7 +28,7 @@ final class ItemsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Library"
+        title = NSLocalizedString("Advitisements", comment: "Title")
         
         adapter.performUpdates(animated: false)
     }

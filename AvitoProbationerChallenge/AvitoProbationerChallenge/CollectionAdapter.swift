@@ -16,6 +16,9 @@ final class CollectionAdapter: NSObject {
         self.collection = collection
         self.delegate = delegate
         super.init()
+        for section in delegate.sections() {
+            section.registerCells(in: collection)
+        }
         collection.collectionViewLayout = UICollectionViewCompositionalLayout(sectionProvider: sectionLayout)
         collection.delegate = self
         datasource.supplementaryViewProvider = supplementaryView
@@ -40,13 +43,11 @@ final class CollectionAdapter: NSObject {
     }
 
     func performUpdates(animated: Bool, completion: (() -> Void)? = nil) {
-        guard let delegate = delegate, let collection = collection else {
-            return
-        }
+        guard let delegate else { return }
 
         var snapshot = NSDiffableDataSourceSnapshot<Section, AnyHashable>()
         for section in delegate.sections() {
-            section.registerCells(in: collection)
+            // section.registerCells(in: collection)
             snapshot.appendSections([section])
 
             let items = delegate.itemsFor(section: section)

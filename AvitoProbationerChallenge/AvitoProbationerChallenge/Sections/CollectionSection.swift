@@ -26,7 +26,7 @@ where CollectionCell: UICollectionViewCell, CollectionCell.Object == T {
         guard let item = item as? T else { return nil }
 
         guard let cell = collection.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? CollectionCell else { return nil }
-        cell.prepareForReuse()
+        // cell.prepareForReuse()
         cell.configure(with: item)
         cellConfiguration?(cell)
 
