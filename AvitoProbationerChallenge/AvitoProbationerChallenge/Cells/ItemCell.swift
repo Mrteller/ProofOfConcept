@@ -37,16 +37,21 @@ class ItemCell: UICollectionViewCell, Cell {
         descriptionLbl.text = object.item.description
         checkmark.isHidden = !object.isSelected
         // TODO: Refactor to async and remove code duplication with `UserItemCell`
-        guard let objectURL = URL(string: object.item.imageURL),
-                objectURL != imageURL else { return }
-        coverImg.image = nil // clear picture before fetching
-        imageURL = objectURL
-        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            guard let self,
-                  let imageData = try? Data(contentsOf: objectURL, options: .mappedIfSafe),
-                    self.imageURL == objectURL else { return }
-            DispatchQueue.main.async {
-                self.coverImg.image = UIImage(data: imageData)
+        guard let objectURL = URL(string: object.item.imageURL)/*,
+                objectURL != imageURL*/ else { return }
+//        coverImg.image = nil // clear picture before fetching
+//        imageURL = objectURL
+//        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+//            guard let self,
+//                  let imageData = try? Data(contentsOf: objectURL, options: .mappedIfSafe),
+//                    self.imageURL == objectURL else { return }
+//            DispatchQueue.main.async {
+//                self.coverImg.image = UIImage(data: imageData)
+//            }
+//        }
+        ImageCache.publicCache.load(url: objectURL as NSURL, item: object.item) { (fetchedItem, image) in
+            if let image {
+                self.coverImg.image = image
             }
         }
     }

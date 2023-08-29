@@ -34,6 +34,8 @@
 		DAC2F32C2A9DF61200B67623 /* UserItemCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32B2A9DF61200B67623 /* UserItemCellDelegate.swift */; };
 		DAC2F32F2A9E45C400B67623 /* ItemsResponse+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F32E2A9E45C300B67623 /* ItemsResponse+.swift */; };
 		DAC2F3312A9E45D100B67623 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3302A9E45D100B67623 /* ItemsResponse.json */; };
+		DAC2F3342A9E89D500B67623 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3332A9E89D500B67623 /* ImageCache.swift */; };
+		DAC2F3362A9E89DE00B67623 /* ImageURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3352A9E89DE00B67623 /* ImageURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		DAC2F32E2A9E45C300B67623 /* ItemsResponse+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemsResponse+.swift"; sourceTree = "<group>"; };
 		DAC2F3302A9E45D100B67623 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
 		DAC2F3322A9E4CC800B67623 /* Item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Item.json; sourceTree = "<group>"; };
+		DAC2F3332A9E89D500B67623 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DAC2F3352A9E89DE00B67623 /* ImageURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				DAC2F2EE2A9DDFAF00B67623 /* AppDelegate.swift */,
 				DAC2F2F02A9DDFAF00B67623 /* SceneDelegate.swift */,
 				DAC2F2F22A9DDFAF00B67623 /* ItemsListViewController.swift */,
+				DAC2F3332A9E89D500B67623 /* ImageCache.swift */,
+				DAC2F3352A9E89DE00B67623 /* ImageURLProtocol.swift */,
 				DAC2F2F42A9DDFAF00B67623 /* Main.storyboard */,
 				DAC2F2F72A9DDFB300B67623 /* Assets.xcassets */,
 				DAC2F2F92A9DDFB300B67623 /* LaunchScreen.storyboard */,
@@ -258,6 +264,7 @@
 			files = (
 				DAC2F32F2A9E45C400B67623 /* ItemsResponse+.swift in Sources */,
 				DAC2F3162A9DE17900B67623 /* ItemCell.swift in Sources */,
+				DAC2F3362A9E89DE00B67623 /* ImageURLProtocol.swift in Sources */,
 				DAC2F3142A9DE17900B67623 /* EmptyUserItemSectionView.swift in Sources */,
 				DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */,
 				DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */,
@@ -266,6 +273,7 @@
 				DAC2F2EF2A9DDFAF00B67623 /* AppDelegate.swift in Sources */,
 				DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */,
 				DAC2F2F12A9DDFAF00B67623 /* SceneDelegate.swift in Sources */,
+				DAC2F3342A9E89D500B67623 /* ImageCache.swift in Sources */,
 				DAC2F3082A9DE14500B67623 /* Section.swift in Sources */,
 				DAC2F3122A9DE17900B67623 /* UserInfoCell.swift in Sources */,
 				DAC2F3072A9DE14500B67623 /* UserItemsSection.swift in Sources */,
