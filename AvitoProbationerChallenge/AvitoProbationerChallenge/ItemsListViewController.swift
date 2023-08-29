@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ItemsListViewController.swift
 //  AvitoProbationerChallenge
 //
 //  Created by Paul on 29/08/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class ItemsListViewController: UIViewController {
     
     enum CollectionSections: String {
         case clientSection
@@ -34,7 +34,7 @@ final class ViewController: UIViewController {
     }
 }
 
-extension ViewController: CollectionAdapterDelegate {
+extension ItemsListViewController: CollectionAdapterDelegate {
     func sections() -> [Section] {
         let clientSection = CollectionSection<ClientInfo, ClientInfoCell>(id: CollectionSections.clientSection.rawValue)
         clientSection.layout = { env in
@@ -84,7 +84,7 @@ extension ViewController: CollectionAdapterDelegate {
     }
 }
 
-extension ViewController: ClientBookCellDelegate {
+extension ItemsListViewController: ClientBookCellDelegate {
     func didTapReturn(book: ClientItem) {
         guard let index = clientBooks.firstIndex(of: book) else {
             return

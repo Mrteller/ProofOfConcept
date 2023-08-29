@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DAC2F2EF2A9DDFAF00B67623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F2EE2A9DDFAF00B67623 /* AppDelegate.swift */; };
 		DAC2F2F12A9DDFAF00B67623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F2F02A9DDFAF00B67623 /* SceneDelegate.swift */; };
-		DAC2F2F32A9DDFAF00B67623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F2F22A9DDFAF00B67623 /* ViewController.swift */; };
+		DAC2F2F32A9DDFAF00B67623 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F2F22A9DDFAF00B67623 /* ItemsListViewController.swift */; };
 		DAC2F2F62A9DDFAF00B67623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F2F42A9DDFAF00B67623 /* Main.storyboard */; };
 		DAC2F2F82A9DDFB300B67623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F2F72A9DDFB300B67623 /* Assets.xcassets */; };
 		DAC2F2FB2A9DDFB300B67623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F2F92A9DDFB300B67623 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		DAC2F2EB2A9DDFAF00B67623 /* AvitoProbationerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoProbationerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC2F2EE2A9DDFAF00B67623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC2F2F02A9DDFAF00B67623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAC2F2F22A9DDFAF00B67623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAC2F2F22A9DDFAF00B67623 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		DAC2F2F52A9DDFAF00B67623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAC2F2F72A9DDFB300B67623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC2F2FA2A9DDFB300B67623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				DAC2F3272A9DE1B000B67623 /* CollectionAdapter.swift */,
 				DAC2F2EE2A9DDFAF00B67623 /* AppDelegate.swift */,
 				DAC2F2F02A9DDFAF00B67623 /* SceneDelegate.swift */,
-				DAC2F2F22A9DDFAF00B67623 /* ViewController.swift */,
+				DAC2F2F22A9DDFAF00B67623 /* ItemsListViewController.swift */,
 				DAC2F2F42A9DDFAF00B67623 /* Main.storyboard */,
 				DAC2F2F72A9DDFB300B67623 /* Assets.xcassets */,
 				DAC2F2F92A9DDFB300B67623 /* LaunchScreen.storyboard */,
@@ -244,7 +244,7 @@
 				DAC2F3262A9DE19E00B67623 /* Cell.swift in Sources */,
 				DAC2F31C2A9DE18300B67623 /* NSCollectionLayoutSection+Sections.swift in Sources */,
 				DAC2F3232A9DE19800B67623 /* ClientItem.swift in Sources */,
-				DAC2F2F32A9DDFAF00B67623 /* ViewController.swift in Sources */,
+				DAC2F2F32A9DDFAF00B67623 /* ItemsListViewController.swift in Sources */,
 				DAC2F2EF2A9DDFAF00B67623 /* AppDelegate.swift in Sources */,
 				DAC2F32A2A9DF58A00B67623 /* CollectionAdapterDelegate.swift in Sources */,
 				DAC2F2F12A9DDFAF00B67623 /* SceneDelegate.swift in Sources */,
