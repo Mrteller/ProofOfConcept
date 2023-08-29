@@ -22,5 +22,6 @@ extension ItemVM: Equatable where T: Identifiable {
 extension ItemVM: Hashable where T: Identifiable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
+        hasher.combine(isSelected)
     }
 }

@@ -25,20 +25,20 @@ final class CollectionAdapter: NSObject {
     }
 
     private func cell(in collection: UICollectionView, at indexPath: IndexPath, for item: AnyHashable) -> UICollectionViewCell? {
-        guard let item = datasource.itemIdentifier(for: indexPath) else {
-            return nil
-        }
-        let section = datasource.snapshot().sectionIdentifiers[indexPath.section]
+        guard let item = datasource.itemIdentifier(for: indexPath),
+              let section = datasource.sectionIdentifier(for: indexPath.section) else { return nil }
+        
         return section.cell(for: item, at: indexPath, in: collection)
     }
 
     private func supplementaryView(in collection: UICollectionView, kind: String, at indexPath: IndexPath) -> UICollectionReusableView? {
-        let section = datasource.snapshot().sectionIdentifiers[indexPath.section]
+        guard let section = datasource.sectionIdentifier(for: indexPath.section) else { return nil }
         return section.supplementaryView(kind: kind, for: datasource.itemIdentifier(for: indexPath), at: indexPath, in: collection)
     }
 
     private func sectionLayout(for sectionIndex: Int, environment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? {
-        let section = datasource.snapshot().sectionIdentifiers[sectionIndex]
+        guard let section = datasource.sectionIdentifier(for: sectionIndex) else { return nil }
+        //let section = datasource.snapshot().sectionIdentifiers[sectionIndex]
         return section.layout(environment: environment)
     }
 
@@ -60,10 +60,8 @@ final class CollectionAdapter: NSObject {
 
 extension CollectionAdapter: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let item = datasource.itemIdentifier(for: indexPath) else {
-            return
-        }
-        let section = datasource.snapshot().sectionIdentifiers[indexPath.section]
+        guard let item = datasource.itemIdentifier(for: indexPath),
+        let section = datasource.sectionIdentifier(for: indexPath.section) else { return }
         section.didSelect(item: item, at: indexPath.row)
     }
 }
