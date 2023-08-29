@@ -15,8 +15,10 @@ class UserItemCell: UICollectionViewCell, Cell {
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var coverImg: UIImageView!
 
-    private var item: Item?
     weak var delegate: UserItemCellDelegate?
+    
+    private var item: Item?
+    private var imageURL: URL? // var to keep track of currently loading image
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,8 +42,21 @@ class UserItemCell: UICollectionViewCell, Cell {
         itemNameLbl.text = object.title
         yearLbl.text = "\(object.price)"
         pagesLbl.text = "\(object.location)"
-        guard let imageURL = URL(string: object.imageURL),
-              let imageData = try? Data(contentsOf: imageURL, options: .alwaysMapped) else { return }
-        coverImg.image = UIImage(data: imageData)
+//        guard let imageURL = URL(string: object.imageURL),
+//              let imageData = try? Data(contentsOf: imageURL, options: .alwaysMapped) else { return }
+//        coverImg.image = UIImage(data: imageData)
+        // TODO: Refactor to async and remove code duplication with `ItemCell`.
+        guard let objectURL = URL(string: object.imageURL),
+              objectURL != imageURL else { return }
+        coverImg.image = nil // clear picture before fetching
+        imageURL = objectURL
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            guard let self,
+                  let imageData = try? Data(contentsOf: objectURL, options: .mappedIfSafe),
+                  self.imageURL == objectURL else { return }
+            DispatchQueue.main.async {
+                self.coverImg.image = UIImage(data: imageData)
+            }
+        }
     }
 }
