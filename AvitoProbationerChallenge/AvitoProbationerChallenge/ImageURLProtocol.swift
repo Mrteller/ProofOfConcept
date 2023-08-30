@@ -32,8 +32,8 @@ class ImageURLProtocol: URLProtocol {
         
         block = DispatchWorkItem(block: {
             if self.cancelledOrComplete == false {
-                let fileURL = URL(fileURLWithPath: reqURL.path)
-                if let data = try? Data(contentsOf: fileURL) {
+                //let fileURL = URL(fileURLWithPath: reqURL.path)
+                if let data = try? Data(contentsOf: reqURL) {
                     urlClient.urlProtocol(self, didLoad: data)
                     urlClient.urlProtocolDidFinishLoading(self)
                 }
@@ -54,11 +54,10 @@ class ImageURLProtocol: URLProtocol {
     }
     
     static func urlSession() -> URLSession {
-        // FIXME: Make it work with custom protocolClasses at some point in future.
-//        let config = URLSessionConfiguration.ephemeral
-//        config.protocolClasses = [ImageURLProtocol.classForCoder()]
-//        return  URLSession(configuration: config)
-        return URLSession.shared
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [ImageURLProtocol.classForCoder()]
+        return  URLSession(configuration: config)
+        //return URLSession.shared
     }
     
 }
