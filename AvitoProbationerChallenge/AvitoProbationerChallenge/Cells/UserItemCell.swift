@@ -10,8 +10,8 @@ import UIKit
 class UserItemCell: UICollectionViewCell, Cell {
 
     @IBOutlet weak var itemNameLbl: UILabel!
-    @IBOutlet weak var yearLbl: UILabel!
-    @IBOutlet weak var pagesLbl: UILabel!
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var locationLbl: UILabel!
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var coverImg: UIImageView!
 
@@ -28,7 +28,7 @@ class UserItemCell: UICollectionViewCell, Cell {
         shadowView.layer.shadowColor = UIColor.lightGray.cgColor
         shadowView.layer.shadowOpacity = 0.2
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        shadowView.layer.shadowRadius = 6
+        shadowView.layer.shadowRadius = 8
     }
 
     @IBAction func returnItem(_ sender: Any) {
@@ -40,8 +40,8 @@ class UserItemCell: UICollectionViewCell, Cell {
         self.item = object
         
         itemNameLbl.text = object.title
-        yearLbl.text = "\(object.price)"
-        pagesLbl.text = "\(object.location)"
+        priceLbl.text = "\(object.price)"
+        locationLbl.text = "\(object.location)"
 //        guard let imageURL = URL(string: object.imageURL),
 //              let imageData = try? Data(contentsOf: imageURL, options: .alwaysMapped) else { return }
 //        coverImg.image = UIImage(data: imageData)

@@ -39,26 +39,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okt-QD-oie">
-                        <rect key="frame" x="20" y="62.5" width="39" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okt-QD-oie">
+                        <rect key="frame" x="20" y="62.5" width="43.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAO-pz-Yec">
-                        <rect key="frame" x="20" y="99.5" width="52" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAO-pz-Yec">
+                        <rect key="frame" x="20" y="99.5" width="70" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvi-AB-Vhy">
-                        <rect key="frame" x="71" y="62.5" width="42" height="21"/>
+                        <rect key="frame" x="75.5" y="62.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWz-5V-T2x">
-                        <rect key="frame" x="84" y="99.5" width="42" height="21"/>
+                        <rect key="frame" x="102" y="99.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                             <constraint firstAttribute="width" constant="40" id="pua-c2-0qL"/>
                         </constraints>
                         <color key="tintColor" systemColor="systemPinkColor"/>
-                        <state key="normal" image="return" catalog="system"/>
+                        <state key="normal" image="xmark.square.fill" catalog="system"/>
                         <connections>
                             <action selector="returnItem:" destination="gTV-IL-0wX" eventType="touchUpInside" id="h5n-0W-ONX"/>
                         </connections>
@@ -101,16 +101,16 @@
             <connections>
                 <outlet property="coverImg" destination="8wd-7g-aGo" id="MOS-Rv-Yza"/>
                 <outlet property="itemNameLbl" destination="HDk-bg-szp" id="Pp7-sm-LJv"/>
-                <outlet property="pagesLbl" destination="FWz-5V-T2x" id="QBN-cg-ROw"/>
+                <outlet property="locationLbl" destination="FWz-5V-T2x" id="QBN-cg-ROw"/>
+                <outlet property="priceLbl" destination="Yvi-AB-Vhy" id="dpO-4K-OqU"/>
                 <outlet property="shadowView" destination="oMg-wn-LMV" id="m3k-Kw-n4W"/>
-                <outlet property="yearLbl" destination="Yvi-AB-Vhy" id="dpO-4K-OqU"/>
             </connections>
             <point key="canvasLocation" x="152.89855072463769" y="187.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="return" catalog="system" width="128" height="102"/>
         <image name="winter" width="105.66666412353516" height="158.33332824707031"/>
+        <image name="xmark.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

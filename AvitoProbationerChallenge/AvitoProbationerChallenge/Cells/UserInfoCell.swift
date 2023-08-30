@@ -12,14 +12,15 @@ class UserInfoCell: UICollectionViewCell, Cell {
     @IBOutlet weak var infoLabel: UILabel!
 
     func configure(with object: UserInfo) {
-        greetLabel.text = NSLocalizedString("Hello \(object.userName)!", comment: "Greeting label in a cell")
+        greetLabel.text = NSLocalizedString("Hello \(object.userName)!", comment: "Greeting label in a cell in \(#file)")
         switch object.itemsAmount {
+            // TODO: Usen inflection [^] syntax to handle plurals properly
         case 0:
-            infoLabel.text = "You have \(object.itemsAmount) items from \(object.maxItemsAmount), time to find your best item!"
+            infoLabel.text = NSLocalizedString("You have \(object.itemsAmount) items from \(object.maxItemsAmount)max!", comment: "Info label in a cell in \(#file)")
         case 1..<object.maxItemsAmount:
-            infoLabel.text = "You have \(object.itemsAmount) items from \(object.maxItemsAmount), don't forget to return them on time!"
+            infoLabel.text = NSLocalizedString("You have \(object.itemsAmount) items from \(object.maxItemsAmount)!", comment: "Info label in a cell in \(#file)")
         case object.maxItemsAmount:
-            infoLabel.text = "You can't take more items, try to return at least one item"
+            infoLabel.text = NSLocalizedString("You can't select more items, unselect at least one item", comment: "Info label in a cell in \(#file)")
         default:
             ()
         }

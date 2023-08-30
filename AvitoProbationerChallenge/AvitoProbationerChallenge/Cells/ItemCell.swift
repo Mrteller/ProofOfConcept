@@ -12,9 +12,9 @@ class ItemCell: UICollectionViewCell, Cell {
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var coverImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var yearLbl: UILabel!
-    @IBOutlet weak var pagesLbl: UILabel!
-    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var locationLbl: UILabel!
+    @IBOutlet weak var createdDateLbl: UILabel!
     @IBOutlet weak var checkmark: UIImageView!
     
     private var imageURL: URL? // var to keep track of currently loading image
@@ -32,9 +32,10 @@ class ItemCell: UICollectionViewCell, Cell {
     
     func configure(with object: ItemVM<Item>) {
         nameLbl.text = object.item.title
-        yearLbl.text = "\(object.item.price)"
-        pagesLbl.text = "\(object.item.location)"
-        descriptionLbl.text = object.item.description
+        priceLbl.text = "\(object.item.price)"
+        locationLbl.text = "\(object.item.location)"
+        createdDateLbl.text = object.item.createdDate
+        // TODO: Add label for `object.item.description`
         checkmark.isHidden = !object.isSelected
         // TODO: Refactor to async and remove code duplication with `UserItemCell`
         guard let objectURL = URL(string: object.item.imageURL)/*,
