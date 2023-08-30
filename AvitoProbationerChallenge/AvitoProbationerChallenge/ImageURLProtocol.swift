@@ -54,6 +54,7 @@ class ImageURLProtocol: URLProtocol {
     }
     
     static func urlSession() -> URLSession {
+        // FIXME: Make it work with custom protocolClasses at some point in future.
 //        let config = URLSessionConfiguration.ephemeral
 //        config.protocolClasses = [ImageURLProtocol.classForCoder()]
 //        return  URLSession(configuration: config)

@@ -1,9 +1,4 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The Image cache.
-*/
+// Simple native Cache
 import UIKit
 import Foundation
 public class ImageCache {
