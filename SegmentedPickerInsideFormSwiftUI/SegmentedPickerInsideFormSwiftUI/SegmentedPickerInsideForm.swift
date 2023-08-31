@@ -50,7 +50,7 @@ struct SegmentedPickerInsideForm: View {
                 }
             }
         }
-        .simultaneousGesture(tapToHideKeyboard) //gesture(tapToHideKeyboard)
+        .gesture(tapToHideKeyboard)
         
     }
 }
