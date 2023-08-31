@@ -12,6 +12,7 @@
 		DAC2F3482A9F7FDE00B67623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F3472A9F7FDE00B67623 /* Assets.xcassets */; };
 		DAC2F34B2A9F7FDE00B67623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC2F34A2A9F7FDE00B67623 /* Preview Assets.xcassets */; };
 		DAC2F3522A9F802D00B67623 /* TaxRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2F3512A9F802D00B67623 /* TaxRate.swift */; };
+		DAC5BB432AA0B2D10005785F /* SegmentedPickerInsideForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5BB422AA0B2D10005785F /* SegmentedPickerInsideForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DAC2F3472A9F7FDE00B67623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC2F34A2A9F7FDE00B67623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAC2F3512A9F802D00B67623 /* TaxRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxRate.swift; sourceTree = "<group>"; };
+		DAC5BB422AA0B2D10005785F /* SegmentedPickerInsideForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerInsideForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				DAC2F3432A9F7FDC00B67623 /* SegmentedPickerInsideFormSwiftUIApp.swift */,
 				DAC2F3452A9F7FDC00B67623 /* ContentView.swift */,
+				DAC5BB422AA0B2D10005785F /* SegmentedPickerInsideForm.swift */,
 				DAC2F3512A9F802D00B67623 /* TaxRate.swift */,
 				DAC2F3472A9F7FDE00B67623 /* Assets.xcassets */,
 				DAC2F3492A9F7FDE00B67623 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC2F3462A9F7FDC00B67623 /* ContentView.swift in Sources */,
+				DAC5BB432AA0B2D10005785F /* SegmentedPickerInsideForm.swift in Sources */,
 				DAC2F3442A9F7FDC00B67623 /* SegmentedPickerInsideFormSwiftUIApp.swift in Sources */,
 				DAC2F3522A9F802D00B67623 /* TaxRate.swift in Sources */,
 			);

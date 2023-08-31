@@ -11,7 +11,7 @@ import SwiftUI
 struct SegmentedPickerInsideFormSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SegmentedPickerInsideForm()
         }
     }
 }
