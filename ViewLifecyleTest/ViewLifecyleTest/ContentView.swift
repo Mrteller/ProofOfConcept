@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSecondViewShown = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button("Show second") {
+            isSecondViewShown.toggle()
         }
-        .padding()
+        .onAppear {
+            appeared()
+        }
+        .fullScreenCover(isPresented: $isSecondViewShown, onDismiss: appeared) {
+            Button("Close second") {
+                isSecondViewShown.toggle()
+            }
+            .onAppear {
+                print("Second appeared")
+            }
+        }
+    }
+    private func appeared() {
+        print("First appeared")
     }
 }
 
