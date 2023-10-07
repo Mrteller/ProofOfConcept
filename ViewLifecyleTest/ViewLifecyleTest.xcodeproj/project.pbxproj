@@ -11,6 +11,7 @@
 		DA1756072ACB5283009CC0EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1756062ACB5283009CC0EA /* ContentView.swift */; };
 		DA1756092ACB5285009CC0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1756082ACB5285009CC0EA /* Assets.xcassets */; };
 		DA17560C2ACB5286009CC0EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA17560B2ACB5286009CC0EA /* Preview Assets.xcassets */; };
+		DA17562D2AD15FA8009CC0EA /* GridTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17562C2AD15FA8009CC0EA /* GridTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA1756062ACB5283009CC0EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA1756082ACB5285009CC0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA17560B2ACB5286009CC0EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA17562C2AD15FA8009CC0EA /* GridTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DA1756042ACB5283009CC0EA /* ViewLifecyleTestApp.swift */,
 				DA1756062ACB5283009CC0EA /* ContentView.swift */,
+				DA17562C2AD15FA8009CC0EA /* GridTestView.swift */,
 				DA1756082ACB5285009CC0EA /* Assets.xcassets */,
 				DA17560A2ACB5285009CC0EA /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA17562D2AD15FA8009CC0EA /* GridTestView.swift in Sources */,
 				DA1756072ACB5283009CC0EA /* ContentView.swift in Sources */,
 				DA1756052ACB5283009CC0EA /* ViewLifecyleTestApp.swift in Sources */,
 			);
