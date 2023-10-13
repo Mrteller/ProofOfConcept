@@ -14,10 +14,12 @@ class UserVM: ObservableObject {
     @Published var username = ""
     @Published var password = ""
     @Published var passwordAgain = ""
+    @Published var email = ""
     
     // Output
     @Published var usernameMessage = ""
     @Published var passwordMessage = ""
+    @Published var emailMessage = ""
     @Published var isValid = false
     
     private var cancellableSet: Set<AnyCancellable> = []
@@ -100,6 +102,16 @@ class UserVM: ObservableObject {
             .eraseToAnyPublisher()
     }
     
+    private var isEmailValidPublisher: AnyPublisher<Bool, Never> {
+        $email
+            .debounce(for: 0.8, scheduler: RunLoop.main)
+            .removeDuplicates()
+            .map { input in // FIXME: Use `Parsable format`
+                return input.count >= 3
+            }
+            .eraseToAnyPublisher()
+    }
+    
     private var isFormValidPublisher: AnyPublisher<Bool, Never> {
         Publishers.CombineLatest(isUsernameValidPublisher, isPasswordValidPublisher)
             .map { usernameIsValid, passwordIsValid in
@@ -132,6 +144,14 @@ class UserVM: ObservableObject {
                 }
             }
             .assign(to: \.passwordMessage, on: self)
+            .store(in: &cancellableSet)
+        
+        isEmailValidPublisher
+            .receive(on: RunLoop.main)
+            .map { valid in
+                valid ? "" : "Email must at least have 3 characters"
+            }
+            .assign(to: \.emailMessage, on: self)
             .store(in: &cancellableSet)
         
         isFormValidPublisher
